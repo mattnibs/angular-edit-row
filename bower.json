@@ -1,0 +1,20 @@
+{
+  "name": "mnibecker-angular-edit-row",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mnibecker/angular-edit-row",
+  "authors": [
+    "Matt Nibecker <mnibecke@gmail.com>"
+  ],
+  "description": "Slick angular directive for editting table rows",
+  "ignore": [
+    "./src/!(angular-edit-row.js)"
+  ]
+  "main": "./src/angular-edit-row.js",
+  "keywords": [
+    "angular",
+    "ng-repeat",
+    "angular",
+    "js"
+  ],
+  "license": "MIT"
+}
