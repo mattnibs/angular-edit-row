@@ -1,4 +1,4 @@
 angular-edit-row
 ================
 
-Angular Directive for slick editing rows without the need of ugly modal popups.
+Free yourself from the mess of Modal Popups! Use this sweet Angular Directive for slick editing of table rows.
