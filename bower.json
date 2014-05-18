@@ -8,7 +8,7 @@
   "description": "Slick angular directive for editting table rows",
   "ignore": [
     "./src/!(angular-edit-row.js)"
-  ]
+  ],
   "main": "./src/angular-edit-row.js",
   "keywords": [
     "angular",
