@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="script.js"></script>
+    <script src="../src/edit-row.angular.js"></script>
+  </head>
+
+  <body ng-app="TestApp" ng-controller="TestCtrl">
+    <h1>Hello Plunker!</h1>
+    
+    <table class="table">
+      <tr>
+        <th>Edit</th>
+        <th>Title</th>
+        <th>Artist</th>
+        <th>Track #</th>
+      </tr>
+      <tr ng-repeat="track in tracks" edit-row edit-row-template="track_edit.html" edit-row-controller="EditTrackCtrl" edit-row-show="track.edit">
+        <td><button ng-init="track.edit=false" ng-click="track.edit=!track.edit">Edit</button>
+        <td ng-bind="track.Title"></td>
+        <td ng-bind="track.Artist"></td>
+        <td ng-bind="track.No"></td>
+      </tr>
+
+    </table>
+
+    <script type="text/ng-template" id="track_edit.html">
+      <form role="form">
+        <div class="form-group">
+          <label for="trackTitle">Track Title</label>
+          <input class="form-control" id="trackTitle" type="text" ng-model="editTrack.Title" />
+        </div>
+        <br />
+        <button class="btn btn-success" ng-click="save()">Save</button>
+        <button class="btn btn-error" ng-click="delete()">Delete</button>
+      </form>
+    </script>
+  </body>
+
+</html>
