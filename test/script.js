@@ -4,7 +4,7 @@ angular.module("TestApp", ['angular-edit-row'])
 function TestCtrl($scope) {
   $scope.tracks = [
     { No: 1, Title: "Let's Go For A Ride", Artist: "Rac" },
-    { No: 2, Title: "How Great is God", Artist: "Hillsong" }
+    { No: 2, Title: "Awake", Artist: "Tycho" }
   ];
 }
 
