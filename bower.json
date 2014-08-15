@@ -7,9 +7,9 @@
   ],
   "description": "Slick angular directive for editting table rows",
   "ignore": [
-    "./src/!(angular-edit-row.js)"
+    "./src/!(edit-row.angular.js)"
   ],
-  "main": "./src/angular-edit-row.js",
+  "main": "./src/edit-row.angular.js",
   "devDependencies": {
     "angular": "1.2.18",
     "bootstrap": "3.1.1"
